@@ -1,4 +1,3 @@
-# co72e499baf5f48346e5975cf
 # Jimmy's Diner - Online Restaurant Ordering System
 
 Welcome to Jimmy's Diner, an online restaurant ordering system designed as a solo project for Module 5 of the Scrimba Frontend Development Program. This project allows users to browse through a menu of delicious items, add them to their cart, and complete their order securely.
