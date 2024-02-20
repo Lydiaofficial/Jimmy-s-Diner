@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy's Diner</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="./images/ferks-guare-KEZdWfYD-ow-unsplash 2.png" alt="Restaurant Logo">
+    </header>
+
+    <main id="menu">
+        <!-- Menu items will be rendered here -->
+    </main>
+
+    <div class="order-container hidden" id="order-container">
+        <h2 class="header-text">Your order</h2>
+
+        <div id="order-details">
+            <!-- Empty div to display the user's order -->
+        </div>
+
+        <hr>
+        <!-- Total price div -->
+        <div class="total-price">
+            <h2 id="total-price-text">Total Price:</h2>
+            <h2 id="total">$0</h2>
+        </div>
+        <button class="complete-order" id="complete-order">Complete order</button>
+    </div>
+    <!-- TModal div -->
+    <div class="modal hidden" id="modal">
+        <div class="modal-content">
+            <form>
+                <button class="close-modal" id="close">X</button>
+                <h2 class="payment-header">Enter card details</h2>
+                <input type="text" name="name" id="buyer-name" placeholder="Enter your name" required>
+                <input type="number" name="card" id="card" placeholder="Enter card number" required>
+                <input type="number" name="cvv" id="cvv" placeholder="Enter CVV" required>
+                <button class="pay" id="pay">Pay</button>
+            </form>
+        </div>
+    </div>
+    <!-- Message div -->
+    <div class="thanks"></div>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
